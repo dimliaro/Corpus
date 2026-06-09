@@ -1,0 +1,8 @@
+services:
+  corpus:
+    build: .
+    ports:
+      - "8085:8085"
+    env_file:
+      - .env          # keeps secrets out of the image
+    restart: unless-stopped

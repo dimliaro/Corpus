@@ -1,0 +1,29 @@
+# Python
+.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Secrets — never copy into image; inject at runtime
+.env
+.env.*
+
+# Version / tooling meta
+.python-version
+.git/
+.gitignore
+
+# Data files — processed offline and stored in Azure AI Search
+data/
+*.pdf
+
+# Docs & config not needed inside the container
+README.md
+Dockerfile
+.dockerignore
+
+# Legacy / dev artefacts
+chroma_db/
